@@ -1,0 +1,16 @@
+{
+  "BOT_STARTED": "¡Hola! Soy Ricardo, y desde hoy tomaré directamente vuestros pedidos. Un besi de fresi!",
+  "BOT_ALREADY_STARTED": "Ya estoy tomando pedidos, pesado... ¡pídeme algo!",
+  "BOT_NOT_STARTED_YET": "No se me ha iniciado aún. Usa el comando /start para empezar a pedirme pedidos.",
+  "CONFIRMED_ORDER_REPORT": "Has pedido medio de {first_part}, medio de {second_part} y para beber {drink}",
+  "NOT_CONFIRMED_ORDER_REPORT": "Has pedido medio de {first_part}, medio de {second_part} y para beber {drink}, pero todavía no lo has confirmado",
+  "ORDER_DESC": "{first_part}, {second_part} y {drink}",
+  "ORDER_CONFIRMATION": "Has pedido medio de {first_part}, medio de {second_part} y para beber {drink}, ¿cierto?",
+  "CANT_CONFIRM_ORDER": "No puedo confirmar tu pedido... o no has hecho ninguno aún o ya te he confirmado el de esta semana",
+  "CANT_CANCEL_ORDER": "No puedo cancelar tu pedido... o no has hecho ninguno aún, o ya te lo he cancelado o ya te lo he confirmado. ¡No me líes!",
+  "PERFECT": "¡Perfecto!",
+  "NO_ORDER_YET": "Todavía no has hecho ningún pedido",
+  "NO_ORDERS_YET": "Nadie ha hecho ningún pedido para esta semana de momento",
+  "ORDERS_REPORT": "Estos son los pedidos que hay hasta ahora:\n{snacks}",
+  "VERSION_ALREADY_EXISTS": "Esa versión ya existe"
+}
