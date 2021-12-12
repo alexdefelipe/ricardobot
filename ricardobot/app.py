@@ -5,8 +5,8 @@ from flask import request
 from ricardobot.configuration.app_config import app, bot
 from ricardobot.persistance.utils.recreate_db import RecreateDb
 
-
 os.environ["RICARDOBOT_ROOT_PATH"] = os.path.dirname(os.path.abspath(__file__))
+
 
 @app.route('/main', methods=['POST'])
 def main():
