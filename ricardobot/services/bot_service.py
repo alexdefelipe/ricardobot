@@ -28,7 +28,7 @@ class BotService:
         self.bot = Bot(api_key,
                        webhook_url=webhook_url,
                        commands=command_handlers,
-                       cert_path=f"{root_path}/fullchain1.pem")
+                       cert_path=f"{root_path}/cert.pem")
         self.regex_handlers = regex_handlers
 
     def process_update(self, update_json: dict):

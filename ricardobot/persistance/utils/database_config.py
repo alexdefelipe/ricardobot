@@ -28,7 +28,7 @@ class DatabaseConfigurator:
 
     @staticmethod
     def get_configuration_parameters():
-        db_path = f"ricardobot/{os.getenv('DB_PATH', None)}"
+        db_path = f"{os.environ['RICARDOBOT_ROOT_PATH']}/{os.getenv('DB_PATH', None)}"
         if db_path is not None:
             return db_path
         return tuple(DatabaseConfigurator.get_database_parameter(param) for param in ("db_name", "db_user", "db_pass",

@@ -1,15 +1,16 @@
 from datetime import date
+from enum import auto
 
 import peewee as pw
-from strenum import StrEnum
+from strenum import UppercaseStrEnum
 
-from ricardobot.services import translation_service
 from ricardobot.persistance.models import BaseModel, Chat, User
+from ricardobot.services import translation_service
 
 
-class OrderStatus(StrEnum):
-    NOT_CONFIRMED = "NOT_CONFIRMED"
-    CONFIRMED = "CONFIRMED"
+class OrderStatus(UppercaseStrEnum):
+    NOT_CONFIRMED = auto()
+    CONFIRMED = auto()
 
 
 class Order(BaseModel):
@@ -24,7 +25,7 @@ class Order(BaseModel):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.status = OrderStatus.NOT_CONFIRMED
+        self.status = self.status or OrderStatus.NOT_CONFIRMED
         self.date = date.today()
 
     def __str__(self):
