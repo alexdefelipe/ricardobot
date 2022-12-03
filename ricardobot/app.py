@@ -20,4 +20,3 @@ def reset():
 if __name__ == '__main__':
     root_path = f"{os.environ['RICARDOBOT_ROOT_PATH']}"
     app.run(host='0.0.0.0', port=8443, ssl_context=(f"{root_path}/cert.pem", f"{root_path}/key.pem"))
-    print("holi")
